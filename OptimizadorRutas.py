@@ -113,7 +113,7 @@ with header_container:
             Vehículo 1 - Termina la última entrega a las 11:45  \n \
             Vehículo 2 - Termina la última entrega a las 13:15  \n \
             Vehículo 3 - Termina la última entrega a las 12:27  \n \
-            Siento que el optimizador considera periodos de recorrido muy cortos, los tiempos los obtiene de openstreetmap')
+            Siento que el optimizador considera periodos de recorrido muy cortos, aunque esa es precisamente su función.')
 
     fig = px.timeline(rutas_g, x_start='arrival', x_end='left', y='vehicle', hover_name='job', color='VColor', color_discrete_map='identity')
     fig.update_yaxes(type='category')
@@ -125,9 +125,14 @@ with header_container:
         la ruta óptima para entregas multi-vehículo tiene más fuciones que no \
         he explorado. En la versión demo deja calcular hasta 100 puntos, por eso \
         las 100 entregas del ejemplo.  \n \
-        Aunque me costo trabajo realizar este proyecto, estoy sorprendido que \
+        Aunque representó mucho esfuerzo realizar este proyecto, estoy sorprendido que \
         con solo 160 líneas de código y la información en excel, se puede lograr \
         un mapa que considero operacional para un escenario real.  \n \
+        Hasta este punto todo se ha hecho con software libre y gratuito, tener menos \
+        restricciones con el optimizador tiene un costo de alrededor de 10 euros al mes.  \n \
+        Obviamente hay soluciones completas listas para integrarse en el proceso de entrega, \
+        seguramente su costo es mayor y desde mi punto de vista su facilidad de uso no motiva \
+        a que las personas entiendan los conceptos completos del ruteo.  \n \
         Links:  \n \
         https://verso-optim.com  \n \
         http://vroom-project.org  \n \
